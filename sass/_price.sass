@@ -1,0 +1,47 @@
+.price
+    padding-top: 160px
+    &__top
+        display: flex
+        align-items: center
+        padding-bottom: 25px
+        &-block
+            width: 50%
+            font-weight: 500
+            font-size: 24px
+            line-height: 34px
+    &__main
+        display: flex
+        align-items: center
+        padding: 25px 0
+        border-top: 1px solid #C4C4C4
+        &-block
+            width: 50%
+            font-size: 18px
+            line-height: 33px
+            opacity: 0.7
+@media(max-width: 575px)
+    .price
+        padding-top: 95px
+        .page-title
+            text-align: left
+            font-size: 28px
+            line-height: 40px
+            text-transform: uppercase
+            margin-bottom: 60px
+        &__top
+            &-block
+                font-size: 18px
+                line-height: 34px
+                &:nth-child(1)
+                    width: 65%
+                &:nth-child(2)
+                    width: 35%
+        &__main
+            padding: 20px 0
+            &-block
+                font-size: 18px
+                line-height: 33px
+                &:nth-child(1)
+                    width: 65%
+                &:nth-child(2)
+                    width: 35%

@@ -1,0 +1,299 @@
+.home
+    &-about
+        .section__wrap
+            padding-top: 95px
+            padding-bottom: 120px
+        &__text
+            font-size: 18px
+            line-height: 33px
+            margin-top: 25px
+    &-sro
+        padding: 185px 0
+        &__logos
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            margin-bottom: 22px
+            img
+                margin: 0 23px
+        &__title
+            margin-bottom: 42px
+            margin-top: 0
+            text-align: center
+            font-family: Mustica Pro
+            font-weight: 600
+            font-size: 42px
+            line-height: 40px
+        &__descr
+            margin: 0 auto
+            max-width: 915px
+            text-align: center
+            font-size: 20px
+            line-height: 29px
+    &-list
+        padding: 120px 0
+        &__block
+            font-weight: 500
+            font-size: 24px
+            line-height: 27px
+            padding: 30px 0
+            border-bottom: 1px solid #C4C4C4
+            &:last-child
+                border-bottom: 0
+        &__quote
+            padding-top: 65px
+            max-width: 940px
+            margin: 0 auto
+            padding-left: 145px
+            font-size: 18px
+            line-height: 38px
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                display: block
+                width: 46px
+                height: 44px
+                background: url('../img/quote.png') center no-repeat
+                top: 14px
+                left: 90px
+    &-photo
+        &__wrap
+            padding-bottom: 120px
+            display: block
+        &__title
+            max-width: 580px
+            font-family: Mustica Pro
+            font-weight: 600
+            font-size: 32px
+            line-height: 40px
+            margin-bottom: 55px
+        &__img
+            display: flex
+            position: relative
+            img
+                max-width: 100%
+                &.op
+                    opacity: 0.8
+            &::after
+                content: ""
+                display: block
+                width: 210px
+                height: 210px
+                right: 190px
+                top: -150px
+                position: absolute
+                background: url('../img/watermark.png') center no-repeat
+        &__quote
+            padding-top: 55px
+            max-width: 940px
+            margin: 0 auto
+            padding-left: 145px
+            font-size: 18px
+            line-height: 38px
+    &-features
+        padding: 120px 0
+        background: url('../img/home-features-bg.png') center no-repeat
+    &-stages
+        &__wrap
+            display: block
+            padding-top: 120px
+        &__top
+            display: flex
+            justify-content: space-between
+            h2
+                margin: 0
+                max-width: 490px
+                font-family: Mustica Pro
+                font-weight: 600
+                font-size: 32px
+                line-height: 40px
+        &__subtitle
+            max-width: 610px
+            font-size: 16px
+            line-height: 29px
+        &__block
+            padding-top: 120px
+            padding-bottom: 60px
+            border-top: 1px solid #C4C4C4
+            position: relative
+            &:nth-child(2)
+                border-top: 0
+        &__img
+            height: 310px
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+            img
+                max-width: 100%
+        &__num
+            font-size: 18px
+            line-height: 34px
+            text-transform: uppercase
+            color: rgba(255, 255, 255, 0.3)
+            position: absolute
+            top: 120px
+            left: 0
+        &__comment
+            font-size: 14px
+            line-height: 27px
+            color: rgba(255, 255, 255, 0.7)
+            position: absolute
+            top: 120px
+            left: 220px
+            max-width: 220px
+        &__name
+            font-weight: 500
+            font-size: 24px
+            line-height: 27px
+            color: rgba(255, 255, 255, 0.7)
+            position: absolute
+            top: 120px
+            right: 0
+            width: 610px
+@media(max-width: 1199px)
+    .home
+        &-stages
+            &__subtitle, &__name
+                width: 450px
+@media(max-width: 991px)
+    .home
+        &-photo
+            &__title
+                max-width: 540px
+            &__img
+                &::after
+                    right: 10px
+        &-stages
+            &__num
+                display: none
+            &__comment
+                left: 0
+            &__top
+                display: block
+                h2
+                    margin-bottom: 40px
+            &__subtitle
+                width: auto
+@media(max-width: 767px)
+    .home
+        &-stages
+            padding-bottom: 70px
+            &__name
+                left: 0
+                right: auto
+                width: auto
+            &__comment
+                position: static
+                padding-left: 80px
+                max-width: 100%
+            &__img
+                height: 200px
+        &-photo
+            &__wrap-first
+                border-top: 1px solid #C4C4C4
+                &.bb
+                    border-bottom: 0
+            &__img
+                height: 285px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    opacity: 0.3
+                    &.op
+                        opacity: 0.3
+                &::after
+                    top: 32px
+                    left: 50%
+                    margin-left: -105px
+        &-features
+            padding: 0
+            &__wrap
+                padding: 70px 0
+                border-bottom: 1px solid #C4C4C4
+                border-top: 1px solid #C4C4C4
+@media(max-width: 575px)
+    .home
+        &-stages
+            &__wrap
+                padding-top: 50px
+            &__img
+                height: auto
+                padding: 10px 0
+            &__top
+                h2
+                    font-size: 24px
+                    line-height: 40px
+                    margin-bottom: 30px
+            &__subtitle
+                font-size: 12px
+                line-height: 23px
+                margin-bottom: 40px
+            &__block
+                padding-top: 40px
+                padding-bottom: 20px
+                border-top: 0
+            &__name
+                top: 20px
+                font-size: 18px
+                line-height: 27px
+            &__comment
+                font-size: 12px
+                line-height: 23px
+        &-about
+            .section__wrap
+                padding: 70px 0
+            &__text
+                font-size: 12px
+                line-height: 23px
+                margin-top: 20px
+        &-sro
+            padding: 70px 0
+            &__logos
+                margin-bottom: 8px
+            &__title
+                font-size: 18px
+                line-height: 40px
+                margin-bottom: 8px
+            &__descr
+                font-size: 12px
+                line-height: 23px
+        &-list
+            padding-top: 60px
+            padding-bottom: 45px
+            &__block
+                font-size: 16px
+                line-height: 27px
+                padding: 25px 0
+                border-bottom: 1px solid rgba(196, 196, 196, 0.23)
+            &__quote
+                padding-left: 40px
+                font-size: 12px
+                line-height: 23px
+                margin-bottom: 25px
+                &::before
+                    width: 25px
+                    left: 10px
+                    top: 28px
+                    background-size: contain
+        &-photo
+            &__wrap
+                padding-bottom: 70px
+                padding-top: 70px
+                &-first
+                    padding-bottom: 10px
+            &__title
+                margin-bottom: 50px
+                font-size: 24px
+                line-height: 40px
+                br
+                    display: none
+            &__img
+                margin-left: -8px
+                margin-right: -8px
+            &__quote
+                padding-left: 0
+                font-size: 12px
+                line-height: 23px

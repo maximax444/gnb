@@ -1,0 +1,82 @@
+.main
+    height: 100vh
+    position: relative
+    &::after
+        content: ""
+        height: 100%
+        width: 100%
+        background: url('../img/main-bg.jpg') center no-repeat
+        background-size: cover
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        opacity: 0.4
+    &__wrap
+        position: absolute
+        width: 100%
+        left: 0
+        bottom: 70px
+    &__all
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__title
+        h1
+            margin: 0
+            margin-bottom: 20px
+            font-family: Mustica Pro
+            font-weight: 600
+            font-size: 42px
+            line-height: 55px
+            text-transform: uppercase
+        span
+            font-size: 24px
+            line-height: 34px
+    &__link
+        text-decoration: none
+        display: flex
+        align-items: center
+        transition: all 0.3s
+        img
+            margin-left: 10px
+            transition: all 0.3s
+        &:hover
+            opacity: 0.8
+            img
+                margin-left: 20px
+@media(max-width: 991px)
+    .main
+        .container
+            position: relative
+        &__link
+            position: absolute
+            bottom: 0
+            right: 0
+@media(max-width: 767px)
+    .main
+        padding-top: 95px
+        padding-bottom: 265px
+        height: auto
+        &::after
+            height: 220px
+            opacity: 1
+            bottom: 0
+            top: auto
+        &__link
+            position: static
+            padding-top: 37px
+        &__wrap
+            position: static
+        &__all
+            display: block
+@media(max-width: 575px)
+    .main
+        &__title
+            h1
+                font-size: 28px
+                line-height: 40px
+                margin-bottom: 19px
+            span
+                font-size: 16px
+                line-height: 26px
